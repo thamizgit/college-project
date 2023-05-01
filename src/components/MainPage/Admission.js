@@ -2,7 +2,7 @@ const Admission = () => {
   return (
     <article className="main-box">
       <article className="inner">
-        <article>
+        <article className="each-article">
           <h1
             style={{
               backgroundColor: "whitesmoke",
@@ -31,7 +31,7 @@ const Admission = () => {
             Engineering, Mechanical Engineering.
           </p>
         </article>
-        <article>
+        <article className="each-article">
           <h1
             style={{
               backgroundColor: "whitesmoke",
@@ -65,7 +65,7 @@ const Admission = () => {
         <img alt="bulb-image1" src={require("../../images/bulp-img.png")} />
       </article>
       <article className="inner-2">
-        <article>
+        <article className="each-article two">
           <h1
             style={{
               backgroundColor: "whitesmoke",
@@ -91,10 +91,11 @@ const Admission = () => {
             Sudharshana Polytechnic College (SPC) located at Kalipatti
             VillageAmmapatti PostThuraiyur TkTrichy DtPin:621 014 Thuraiyur
             Tiruchirappalli Tamil Nadu is one of the popular colleges in India.
-            The College has been rated by 19 people on iCBSE. has been viewed 616 times by the visitors on iCBSE Source.
+            The College has been rated by 19 people on iCBSE. has been viewed
+            616 times by the visitors on iCBSE Source.
           </p>
         </article>
-        <article>
+        <article className="each-article">
           <h1
             style={{
               backgroundColor: "whitesmoke",
@@ -115,8 +116,6 @@ const Admission = () => {
               color: "darkblue",
               fontWeight: "bold",
               padding: "0.5rem",
-              
-              
             }}
           >
             A rise of 3% was witnessed in the number of companies that visited

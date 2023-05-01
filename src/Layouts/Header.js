@@ -18,7 +18,7 @@ function Header() {
       : width > 410
       ? 360
       : width > 270
-      ? 350
+      ? 300
       : 200;
   return (
     <article className="for-header">
