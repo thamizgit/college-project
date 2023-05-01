@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/college-project/static/css/main.a8e88073.css",
-    "main.js": "/college-project/static/js/main.88000244.js",
+    "main.css": "/college-project/static/css/main.5d38bb2e.css",
+    "main.js": "/college-project/static/js/main.cb136b42.js",
     "static/media/Slide9.jpg": "/college-project/static/media/Slide9.79591aef6a9ed712063a.jpg",
     "static/media/Slide1.jpg": "/college-project/static/media/Slide1.77df84a5e10f448f0ecc.jpg",
     "static/media/Slide2.jpg": "/college-project/static/media/Slide2.1e41547b46b4eb98e5f7.jpg",
@@ -11,11 +11,11 @@
     "static/media/header-image.jpg": "/college-project/static/media/header-image.23c4178df25ea91117ff.jpg",
     "static/media/bulp-img.png": "/college-project/static/media/bulp-img.cdd56d55603b78ebe3b0.png",
     "index.html": "/college-project/index.html",
-    "main.a8e88073.css.map": "/college-project/static/css/main.a8e88073.css.map",
-    "main.88000244.js.map": "/college-project/static/js/main.88000244.js.map"
+    "main.5d38bb2e.css.map": "/college-project/static/css/main.5d38bb2e.css.map",
+    "main.cb136b42.js.map": "/college-project/static/js/main.cb136b42.js.map"
   },
   "entrypoints": [
-    "static/css/main.a8e88073.css",
-    "static/js/main.88000244.js"
+    "static/css/main.5d38bb2e.css",
+    "static/js/main.cb136b42.js"
   ]
 }
