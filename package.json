@@ -1,7 +1,6 @@
 {
   "name": "sudharshana-college",
   "version": "0.1.0",
-  "homepage" : "https://github-thamizgit.github.io/sudharshana-college",
   "private": true,
   "dependencies": {
     "@coreui/react": "^4.6.0",
