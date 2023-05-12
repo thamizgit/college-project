@@ -6,6 +6,8 @@ const KeepMeUpdate = () => {
   const [updateName, setUpdateName] = useState('');
   const [updateMail, setUpdateMail] = useState('');
   const [updateMobile, setUpdateMobile] = useState('');
+
+  const [updateLoading, setUpdateLoading] = useState(false);
   const handleSubmit = async (e) => {
     e.preventDefault();
    
@@ -17,7 +19,8 @@ const KeepMeUpdate = () => {
        if (updateMobile.length !== 10) {
          toast.error("Please enter a valid mobile number");
          return;
-       }
+      }
+      setUpdateLoading(true);
       const result = await axios.post("/updateme", JSON.stringify({
         name: updateName,
         mail: updateMail,
@@ -28,7 +31,7 @@ const KeepMeUpdate = () => {
           'Content-Type': 'application/json'
         }
       });
-      await toast.success('Successfully subscribed!');
+      toast.success('Successfully subscribed!');
       console.log(result);
     }
     catch (err) {
@@ -46,6 +49,9 @@ const KeepMeUpdate = () => {
       }
       
       console.log(err);
+    }
+    finally {
+      setUpdateLoading(false);
     }
   }
   return (
@@ -82,7 +88,7 @@ const KeepMeUpdate = () => {
             onChange={(e) => setUpdateMobile(e.target.value)}
           />
 
-          <button onClick={() => handleSubmit} className="update-submit" type="submit" > Submit</button>
+          <button disabled={updateLoading && true} onClick={() => handleSubmit} className="update-submit" type="submit" > Submit</button>
           <ToastContainer />
         </form>
       </article>

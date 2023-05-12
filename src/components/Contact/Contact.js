@@ -7,9 +7,13 @@ const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [query, setQuery] = useState("");
+
+
+  const [formLoading, setFormLoading] = useState(false);
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+      setFormLoading(true);
       const response = await axios.post('/sendquery', JSON.stringify({
         name, email, query
       }), {
@@ -37,6 +41,9 @@ const Contact = () => {
       else {
         toast.error("Something went wrong. Try again");
       }
+    }
+    finally {
+      setFormLoading(false);
     }
 
   }
@@ -126,7 +133,7 @@ return (
           value={query}
           onChange={(e)=>setQuery(e.target.value)}
         ></textarea>
-        <button className="btn" type="submit">
+        <button disabled={formLoading && true} className="btn" type="submit">
           {" "}
           Submit
         </button>
