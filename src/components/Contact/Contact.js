@@ -2,12 +2,10 @@ import './Contact.css';
 import axios from '../../api/axios';
 import { useState } from 'react';
 import { toast,ToastContainer } from 'react-toastify';
-
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [query, setQuery] = useState("");
-
 
   const [formLoading, setFormLoading] = useState(false);
   const handleSubmit = async (e) => {
@@ -112,7 +110,7 @@ return (
         </p>
       </div>
     </section>
-    <form className="forms" onSubmit={(e)=>handleSubmit(e)}>
+    <form className="forms" onSubmit={(e) => handleSubmit(e)}>
       <fieldset
         style={{
           border: "2px solid black",
@@ -121,9 +119,20 @@ return (
       >
         <legend>Send an Query</legend>
         <label className="offscreen">NAME:</label>
-        <input type="text" placeholder="Your Name" value={name} onChange={(e)=>setName(e.target.value)}></input>
+        <input
+          type="text"
+          placeholder="Your Name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        ></input>
         <label className="offscreen">Email:</label>
-        <input type="email" placeholder="Your Email" required value={email} onChange={(e)=>setEmail(e.target.value)}></input>
+        <input
+          type="email"
+          placeholder="Your Email"
+          required
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        ></input>
         <label className="offscreen">Comments:</label>
         <textarea
           placeholder="Your queries here"
@@ -131,9 +140,9 @@ return (
           rows={10}
           required
           value={query}
-          onChange={(e)=>setQuery(e.target.value)}
+          onChange={(e) => setQuery(e.target.value)}
         ></textarea>
-        <button disabled={formLoading && true} className="btn" type="submit">
+        <button className={`btn ${formLoading && "loader"}`} type="submit">
           {" "}
           Submit
         </button>

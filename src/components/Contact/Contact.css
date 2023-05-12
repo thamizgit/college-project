@@ -73,10 +73,15 @@ fieldset button{
   background-color:rgb(42, 225, 42);
   border: none;
   color:whitesmoke;
+  font-weight: bold;
+  font-size: 1.1rem;
   cursor: pointer;
 }
 fieldset button:hover{
   opacity: 0.8;
+}
+fieldset button.loader{
+  filter: blur(1rem);
 }
 @media screen and (max-width:600px){
   .forms{
@@ -84,5 +89,8 @@ fieldset button:hover{
   }
   .forms input{
     width: 80%;
+  }
+  fieldset button{
+    font-size: 1rem;
   }
 }

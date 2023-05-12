@@ -88,7 +88,7 @@ const KeepMeUpdate = () => {
             onChange={(e) => setUpdateMobile(e.target.value)}
           />
 
-          <button disabled={updateLoading && true} onClick={() => handleSubmit} className="update-submit" type="submit" > Submit</button>
+          <button onClick={() => handleSubmit} className={`update-submit ${updateLoading && 'loader'}`} type="submit" > Submit</button>
           <ToastContainer />
         </form>
       </article>

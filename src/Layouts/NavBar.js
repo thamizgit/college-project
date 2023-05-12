@@ -1,66 +1,73 @@
 import './NavBar.css';
 import { SocialIcon } from 'react-social-icons';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
+
 const NavBar = () => {
   const [isClicked, setIsClicked] = useState(false);
-  const [nav, setNav] = useState("home");
+  const location = useLocation();
+   const [nav, setNav] = useState(location.pathname);
+  useEffect(() => {
+    setNav(location.pathname);
+  }, [location.pathname])
+  
     return (
       <header>
         <ul className="navbar">
           <li>
             <Link
-              className={`${nav === "home" && "active"}`}
+              className={`${nav === "/" && "active"}`}
               to="/"
-              onClick={() => setNav("home")}
+             
             >
               Home
             </Link>
           </li>
           <li className="dropdown">
             <Link
-              className={`${nav === "departments" && "active"}`}
+              className={`${nav === "/departments" && "active"}`}
               to="/departments"
-              onClick={() => setNav("departments")}
+              
             >
               Departments
             </Link>
           </li>
           <li>
             <Link
-              className={`${nav === "gallery" && "active"}`}
+              className={`${nav === "/gallery" && "active"}`}
               to="/gallery"
-              onClick={() => setNav("gallery")}
+              
             >
               Gallery
             </Link>
           </li>
           <li>
             <Link
-              className={`${nav === "facilities" && "active"}`}
+              className={`${nav === "/facility" && "active"}`}
               to="/facility"
-              onClick={() => setNav("facilities")}
+             
             >
               Facilities
             </Link>
           </li>
           <li>
-            <Link to="#">Online Payment</Link>
+            <Link className='online-payment' to={"/"}>Online Payment</Link>
           </li>
           <li>
             <Link
-              className={`${nav === "achievements" && "active"}`}
+              className={`${nav === "/achievements" && "active"}`}
               to="/achievements"
-              onClick={() => setNav("achievements")}
+           
             >
               Achievements
             </Link>
           </li>
           <li>
             <Link
-              className={`${nav === "contact" && "active"}`}
+              className={`${nav === "/contact" && "active"}`}
               to="/contact"
-              onClick={() => setNav("contact")}
+              
             >
               Contact
             </Link>
@@ -124,6 +131,7 @@ const NavBar = () => {
             <Link to="/contact">Contact</Link>
           </li>
         </ul>
+        
       </header>
     );
 }

@@ -153,6 +153,9 @@ body{
   background-position: left bottom;
   color: whitesmoke;
 }
+.update form .update-submit.loader {
+  filter: blur(1.02rem);
+}
 .footer{
   
   display: flex;
