@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/college-project/static/css/main.09807414.css",
-    "main.js": "/college-project/static/js/main.95c1f519.js",
+    "main.css": "/college-project/static/css/main.082cf9ed.css",
+    "main.js": "/college-project/static/js/main.407234da.js",
     "static/media/achievement1.jpg": "/college-project/static/media/achievement1.97843204fe945b07f91b.jpg",
     "static/media/placementInfo.pdf": "/college-project/static/media/placementInfo.1b00634035b630b9593d.pdf",
     "static/media/ro1.jpg": "/college-project/static/media/ro1.3613943b94f600d14a39.jpg",
@@ -86,11 +86,11 @@
     "static/media/nithyanantham.jpg": "/college-project/static/media/nithyanantham.2204dff7ed30cb2ead34.jpg",
     "static/media/sindhuja.jpg": "/college-project/static/media/sindhuja.2db09946091c5fdc2aaf.jpg",
     "index.html": "/college-project/index.html",
-    "main.09807414.css.map": "/college-project/static/css/main.09807414.css.map",
-    "main.95c1f519.js.map": "/college-project/static/js/main.95c1f519.js.map"
+    "main.082cf9ed.css.map": "/college-project/static/css/main.082cf9ed.css.map",
+    "main.407234da.js.map": "/college-project/static/js/main.407234da.js.map"
   },
   "entrypoints": [
-    "static/css/main.09807414.css",
-    "static/js/main.95c1f519.js"
+    "static/css/main.082cf9ed.css",
+    "static/js/main.407234da.js"
   ]
 }
