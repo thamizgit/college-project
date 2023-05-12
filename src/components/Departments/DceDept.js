@@ -5,16 +5,13 @@ const DceDept = ({ dceref }) => {
     <article
       style={{
         backgroundColor: "purple",
-        display: "flex",
-        flexFlow: "column wrap",
       }}
       ref={dceref}
       className="department"
     >
       <article className="department-name">
-        <p></p>
         <h1>
-          Diploma for Civil Engineering [DCE]
+          Diploma in Civil Engineering [DCE]
           <BsFillBuildingFill
             style={{ padding: "4px", marginBottom: "-8px" }}
           />
@@ -47,10 +44,10 @@ const DceDept = ({ dceref }) => {
       <article className="department-sec">
         <article className="department-sec-img">
           <img
+            alt="dce-lab"
             src={require("../../images/labs/dcelab.jpg")}
-            width="400px"
-            height="300px"
-            alt="dcelab"
+            width={320}
+            height={320}
           />
         </article>
         <article className="department-sec-con">
@@ -70,10 +67,10 @@ const DceDept = ({ dceref }) => {
       <article className="department-sec reverse">
         <article className="department-sec-img">
           <img
+            alt="dce-lab"
             src={require("../../images/labs/surveying.jpg")}
-            width="400px"
-            height="300px"
-            alt="dcelab"
+            width={320}
+            height={320}
           />
         </article>
         <article className="department-sec-con">
@@ -96,10 +93,10 @@ const DceDept = ({ dceref }) => {
         <h1>Faculty details </h1>
       </article>
       <article className="department-table">
-        <table style={{ borderRadius: "10px" }}>
+        <table>
           <thead>
             <tr>
-              <th>S.No</th>
+              <th className="s-no">S.No</th>
               <th>Name</th>
               <th>Exp (in Years)</th>
               <th>Subject</th>
@@ -108,9 +105,33 @@ const DceDept = ({ dceref }) => {
           <tbody>
             <tr>
               <td>1</td>
-              <td>KavyaMaran</td>
+              <td>Karthikeyan S</td>
+              <td>4</td>
+              <td>ENGG. PHYSICS</td>
+            </tr>
+            <tr>
               <td>2</td>
-              <td>Maths</td>
+              <td>Miss BHUVANA S</td>
+              <td>2</td>
+              <td>MATHEMATICS</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Miss BRINDHA S</td>
+              <td>6</td>
+              <td>ENGINEERING GRAPHICS</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td> Mr. KANAGARAJU K</td>
+              <td>4</td>
+              <td> AUTOMOBILES</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Mr. JAYABAL T</td>
+              <td>10</td>
+              <td> DESIGN OF MACHNIE ELEMENTS</td>
             </tr>
           </tbody>
         </table>

@@ -93,7 +93,7 @@ const NavBar = () => {
             ></SocialIcon>
           </h3>
         </article>
-        <div className="for-ham">
+        <div  className="for-ham">
           <div className="menu-icon">
             <button className="ham"></button>
           </div>
