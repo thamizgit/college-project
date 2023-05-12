@@ -5,7 +5,7 @@ import Admission from "./Admission";
 import KeepMeUpdate from "./KeepMeUpdate";
 const Home = () => {
   return (
-    <article>
+    <article className="main-page-section">
       <Slider />
       <article className="vision-mission">
         <Vision />

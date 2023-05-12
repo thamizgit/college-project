@@ -1,29 +1,32 @@
+import { BsTools } from "react-icons/bs";
+import pdf from "../../PDF/placementInfo.pdf";
 const MechDept = ({ mechref }) => {
   return (
-    <article ref={mechref} className="department">
+    <article
+      style={{ backgroundColor: "#15a5d1" }}
+      ref={mechref}
+      className="department"
+    >
       <article className="department-name">
         <h1>
-          <i className="fa-solid fa-wrench" style={{ padding: "1rem" }}></i>
           Diploma in Mechanical Engineering [MECH]
+          <BsTools style={{ padding: "4px", marginBottom: "-8px" }} />
         </h1>
       </article>
       <article className="department-sec">
         <article className="department-sec-con">
           <p>
-            The duration of the Diploma in Mechanical Engineering is 3 years.
-            The candidates can pursue Diploma in Mechanical Engineering
-            immediately after their 10th entrance exam. The entry to Mechanical
-            engineering polytechnic course is either based on merit list or
-            entrance exam. The top entrance exams for Diploma in Mechanical
-            engineering are JEECUP, JEXPO, Odisha DET, etc. The top recruiters
-            for the Mechanical engineering Diploma courses are Bajaj, Ford,
-            Honda, NTPC, BHEL Hindustan Unilever, L&T, Ashok Leyland, etc.
-            Candidates who have high aptitude and interest in machines, advanced
-            mechanics, robotics should pursue this course. Candidates after
-            completion of the course are accepted in different job profiles such
-            as Mechanical Engineer, Manufacturing Manager, Sanction Head, Sales
-            Engineer, Mechanical Technician, etc. The average salary of
-            Mechanical Diploma Holders range between INR 20000-INR 500000.
+            Department of Mechanical Engineering was started in 2007 with an
+            intake of 60 students. In 2011 the all India council for technical
+            education granted approval for the addition of 60 students. Now the
+            mechanical engineering department is having 240 students for I year
+            and a addition 48 seats for direct II year students. Candidates who
+            have high aptitude and interest in machines, advanced mechanics,
+            robotics should pursue this course. Candidates after completion of
+            the course are accepted in different job profiles such as Mechanical
+            Engineer, Manufacturing Manager, Sanction Head, Sales Engineer,
+            Mechanical Technician, etc. The average salary of Mechanical Diploma
+            Holders range between INR 20000-INR 500000.
           </p>
         </article>
       </article>
@@ -33,18 +36,72 @@ const MechDept = ({ mechref }) => {
       </article>
       <article className="department-sec">
         <article className="department-sec-img">
-          <img
-            src={require("../../images/browser-icon.png")}
-            width={320}
-            height={320}
+          <img alt="mech-lab"
+            src={require("../../images/labs/cncmilling.jpg")}
+            width={350}
+            height={350}
           />
         </article>
         <article className="department-sec-con">
           <p>
             {" "}
-            This is the lab of computer science. ISNDNduh vdinvdudv dm dinvnd dv
-            ndvs dnvnu d vdn vdudnv dsvndundvs vdvdi duhuvds dvidsvn dv
-            dvuvdnivdsuauvs dvsanvds vdsadvhbdv badinv dj idsvn dsavdvidvu dsdvs
+            A CNC milling lab is a facility or a department that is dedicated to
+            the use of computer numerical control (CNC) milling machines for
+            manufacturing and machining purposes. CNC milling machines are a
+            type of machine tool that are used to cut and shape a variety of
+            materials, such as metal, wood, and plastic, by removing material
+            from a workpiece using a rotating cutting tool. It allows for the
+            creation of complex geometries and the production of parts with
+            tight tolerances, making it a crucial part of modern manufacturing
+            processes.
+          </p>
+        </article>
+      </article>
+      <article className="department-sec reverse">
+        <article className="department-sec-img">
+          <img alt="mech-lab"
+            src={require("../../images/labs/thermal.jpg")}
+            width={350}
+            height={350}
+          />
+        </article>
+        <article className="department-sec-con">
+          <p>
+            {" "}
+            A Thermal Lab is a facility or department that is dedicated to the
+            study, analysis, and testing of thermal systems and processes.
+            Thermal systems refer to any system that involves the transfer,
+            conversion, or utilization of heat energy. The lab may offer
+            training and education on thermal systems and processes, including
+            heat transfer, thermodynamics, and fluid mechanics. It provides a
+            platform for students, researchers, and professionals to gain
+            hands-on experience with thermal equipment and techniques and to
+            develop innovative solutions for improving the efficiency,
+            sustainability, and safety of thermal systems and processes.
+          </p>
+        </article>
+      </article>
+      <article className="department-sec">
+        <article className="department-sec-img">
+          <img alt="mech-lab"
+            src={require("../../images/labs/lathework.jpg")}
+            width={350}
+            height={350}
+          />
+        </article>
+        <article className="department-sec-con">
+          <p>
+            {" "}
+            A Lathe Work Lab is a facility or department that is dedicated to
+            the study, testing, and analysis of lathe operations and practices.
+            A lathe is a machine tool used to shape and cut materials by
+            rotating the workpiece against a cutting tool. Lathes are used in a
+            variety of manufacturing processes, including metalworking,
+            woodworking, and glassworking. The lab may offer training and
+            education on lathe operation, safety, and maintenance. It may also
+            conduct research and development in the area of lathe technology,
+            such as developing new cutting tools, optimizing lathe operations,
+            and exploring the use of automation and robotics in lathe machining.
           </p>
         </article>
       </article>
@@ -94,6 +151,19 @@ const MechDept = ({ mechref }) => {
             </tr>
           </tbody>
         </table>
+      </article>
+      <article>
+        {" "}
+        <p style={{ textAlign: "center", margin: "2rem" }}>
+          <a
+            style={{ color: "white" }}
+            href={pdf}
+            target="_blank"
+            rel="noreferrer"
+          >
+            View Placement Details
+          </a>
+        </p>
       </article>
     </article>
   );

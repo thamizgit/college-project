@@ -24,6 +24,25 @@
     color:whitesmoke;
     transition: 0.5s ease-in-out;
 }
+.dept-card.MECH:hover{
+    background-color: #15a5d1;
+    color:white;
+}
+.dept-card.ECE:hover{
+    background-color: #57e365;
+}
+.dept-card.CSE:hover{
+    background-color: #c8bd4d;
+}
+.dept-card.EEE:hover{
+    background-color: #df5d82;
+}
+.dept-card.AUTO:hover{
+    background-color: #e88b5c;
+}
+.dept-card.DCE:hover{
+    background-color:purple;
+}
 .dept-card .dept-icon{
     font-size: 70px;
 }
@@ -49,6 +68,7 @@
     padding-bottom: 1rem;
     display: flex;
     flex-direction: column;
+    margin: 2rem 0;
 }
 .department .department-name{
     display: flex;
@@ -71,10 +91,26 @@
 .department .department-sec{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-content: center;
+    align-items: center;
 
     
+}
+.department .department-sec img:hover{
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+.department .department-sec .department-sec-con:hover{
+    transform: scale(1.022);
+    transition: all 0.5s;
+}
+.department .department-sec.reverse{
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 .department .department-sec .department-sec-con{
     display: flex;
@@ -92,7 +128,7 @@
     
 }
 .department .department-sec .department-sec-img img{
-    width: auto;
+    
     margin:1rem;
     border-radius: 12px;
 }
@@ -100,7 +136,7 @@
   align-self: center;
     
 }
-.department .department-table th,td{
+.department .department-table th,.department .department-table td{
     
     outline: 3px solid darkblue;
     width:240px;
@@ -133,6 +169,11 @@
     }
     .department .department-sec{
         flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+    .department .department-sec.reverse{
+        flex-flow: column;
         align-items: center;
         align-content: center;
     }

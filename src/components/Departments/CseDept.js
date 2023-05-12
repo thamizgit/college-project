@@ -1,29 +1,30 @@
+import { HiDesktopComputer } from "react-icons/hi";
+import pdf from "../../PDF/placementInfo.pdf";
 const CseDept = ({ cseref }) => {
   return (
-    <article ref={cseref} className="department">
+    <article
+      style={{ backgroundColor: "#c8bd4d" }}
+      ref={cseref}
+      className="department"
+    >
       <article className="department-name">
         <h1>
-          <i
-            className="fa-solid fa-laptop-code"
-            style={{ padding: "1rem" }}
-          ></i>
           Diploma in Computer Science [CSE]
+          <HiDesktopComputer style={{ padding: "4px", marginBottom: "-8px" }} />
         </h1>
       </article>
       <article className="department-sec">
         <article className="department-sec-con">
           <p>
-            A diploma in Computer Science is a diploma level certificate and
-            professional course that teach learners about designing and
-            developing methods and tools required in computer and software
-            fields and the programming languages to work in that environment
-            Diploma in Computer Science broadens the computer knowledge of the
-            learners and help them in analyzing and developing new applications
-            Diploma in Computer Science helps one in getting a job in the
-            software and hardware companies Interested learners can pursue this
-            diploma course from a well-recognized college Average fee for
-            Diploma in Computer Science is between INR 10 to 60 thousand in a
-            year and the course may take 1 to 3 year to complete
+            The Computer Engineering Department was established in the year
+            2007. It follows the curriculum prescribed by DOTE, Chennai for the
+            award of Diploma. The department is well equipped with well
+            established Laboratories. The Department has many areas of Interest
+            like Hardware, Networks, Data Structures and Data Base Management
+            System. Technically sound eminent staff from knowledge base our
+            department. The Department has well equipped computing laboratories
+            with latest computer system and rich repository of software covering
+            a wide spectrum of applications.
           </p>
         </article>
       </article>
@@ -34,7 +35,8 @@ const CseDept = ({ cseref }) => {
       <article className="department-sec">
         <article className="department-sec-img">
           <img
-            src={require("../../images/browser-icon.png")}
+            alt="cse-lab"
+            src={require("../../images/labs/computer.jpg")}
             width={320}
             height={320}
           />
@@ -42,9 +44,14 @@ const CseDept = ({ cseref }) => {
         <article className="department-sec-con">
           <p>
             {" "}
-            This is the lab of computer science. ISNDNduh vdinvdudv dm dinvnd dv
-            ndvs dnvnu d vdn vdudnv dsvndundvs vdvdi duhuvds dvidsvn dv
-            dvuvdnivdsuauvs dvsanvds vdsadvhbdv badinv dj idsvn dsavdvidvu dsdvs
+            The department also encourages innovative projects and quality
+            research in various interrelated domains. The department is actively
+            involved in sponsored research projects and consultancy services.
+            The department is involved in major research on which faculty
+            members and students work on several areas such as Networks,
+            Database, Theoretical Computer Science, Multimedia, Image
+            Processing, Software Engineering, Data Mining, Big Data, Machine
+            Learning and Internet of Things
           </p>
         </article>
       </article>
@@ -94,6 +101,19 @@ const CseDept = ({ cseref }) => {
             </tr>
           </tbody>
         </table>
+      </article>
+      <article>
+        {" "}
+        <p style={{ textAlign: "center", margin: "2rem" }}>
+          <a
+            style={{ color: "white" }}
+            href={pdf}
+            target="_blank"
+            rel="noreferrer"
+          >
+            View Placement Details
+          </a>
+        </p>
       </article>
     </article>
   );

@@ -6,20 +6,20 @@ function Header() {
     width > 1500
       ? 1150
       : width > 1300
-      ? 950
-      : width > 1100
-      ? 750
-      : width > 1000
-      ? 650
-      : width > 700
-      ? 650
-      : width > 500
-      ? 450
-      : width > 410
-      ? 360
-      : width > 270
-      ? 300
-      : 200;
+        ? 950
+        : width > 1100
+          ? 750
+          : width > 1000
+            ? 650
+            : width > 700
+              ? 650
+              : width > 500
+                ? 450
+                : width > 410
+                  ? 390
+                  : width > 390
+                    ? 370 : width > 350 ? 350
+                      : width > 270 ? 260 : 200;
   return (
     <article className="for-header">
       <img

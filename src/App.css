@@ -12,8 +12,8 @@ body{
  
 }
 ::selection{
-  background-color: darkblue;
-  color:white;
+  background-color: cyan;
+  color:black;
 }
 
 .head{
@@ -131,6 +131,10 @@ body{
   outline:2px solid whitesmoke;
 }
 .update form .update-submit{
+  width: 100px;
+  height: 40px;
+  font-weight: bold;
+  font-size: 1.3rem;
   background-color: transparent;
   border: 2px solid white;
   color: whitesmoke;
@@ -360,7 +364,7 @@ body{
   }
   
   100% {
-    transform: translateX(30%);
+    transform: translateX(+30%);
     opacity: 1;
   }
   

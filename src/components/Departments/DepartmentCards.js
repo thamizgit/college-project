@@ -1,33 +1,19 @@
 import DepartmentCard from "../../Layouts/DepartmentCard";
-export default function DepartmentCards({
-  dceref,
-  autoref,
-  eeeref,
-  cseref,
-  eceref,
-  mechref,
-}) {
+import { HiDesktopComputer } from "react-icons/hi";
+import { BsFillBuildingFill } from "react-icons/bs";
+import { BsCarFrontFill } from "react-icons/bs";
+import { MdElectricalServices } from "react-icons/md";
+import { MdOutlineCellTower } from "react-icons/md";
+import { BsTools } from 'react-icons/bs';
+export default function DepartmentCards() {
   return (
     <article className="dept-links">
-      <DepartmentCard
-        icon="fa-solid fa-building-circle-check"
-        dept="DCE"
-        dceref={dceref}
-        autoref={autoref}
-      />
-      <DepartmentCard icon="fa-solid fa-gauge" dept="AUTO" autoref={autoref} />
-      <DepartmentCard
-        icon="fa-solid fa-plug-circle-bolt"
-        dept="EEE"
-        eeeref={eeeref}
-      />
-      <DepartmentCard
-        icon="fa-solid fa-laptop-code"
-        dept="CSE"
-        cseref={cseref}
-      />
-      <DepartmentCard icon="fa-solid fa-microchip" dept="ECE" eceref={eceref} />
-      <DepartmentCard icon="fa-solid fa-wrench" dept="MECH" mechref={mechref} />
+      <DepartmentCard icon={<BsFillBuildingFill />} dept="DCE" />
+      <DepartmentCard icon={<BsCarFrontFill />} dept="AUTO" />
+      <DepartmentCard icon={<MdElectricalServices />} dept="EEE" />
+      <DepartmentCard icon={<HiDesktopComputer />} dept="CSE" />
+      <DepartmentCard icon={<MdOutlineCellTower />} dept="ECE" />
+      <DepartmentCard icon={<BsTools />} dept="MECH" />
     </article>
   );
 }
